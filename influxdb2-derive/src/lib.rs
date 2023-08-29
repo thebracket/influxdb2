@@ -82,7 +82,7 @@ pub fn from_data_point(input: TokenStream) -> TokenStream {
                                 settings.#ident = (v as &::num_traits::cast::ToPrimitive).to_f64().unwrap();
                             }
                         },
-                        _ => panic!("Cannot parse out map entry, key: {}", key),
+                        _ => println!("Cannot parse out map entry, key: {}", key),
                     }
                 })
             }
@@ -98,7 +98,7 @@ pub fn from_data_point(input: TokenStream) -> TokenStream {
                                 settings.#ident = *v;
                             }
                         },
-                        _ => panic!("Cannot parse out map entry, key: {}", key),
+                        _ => println!("Cannot parse out map entry, key: {}", key),
                     }
                 })
             }
@@ -114,7 +114,7 @@ pub fn from_data_point(input: TokenStream) -> TokenStream {
                                 settings.#ident = *v;
                             }
                         },
-                        _ => panic!("Cannot parse out map entry, key: {}", key),
+                        _ => println!("Cannot parse out map entry, key: {}", key),
                     }
                 })
             }
@@ -130,7 +130,7 @@ pub fn from_data_point(input: TokenStream) -> TokenStream {
                                 settings.#ident = *v;
                             }
                         },
-                        _ => panic!("Cannot parse out map entry, key: {}", key),
+                        _ => println!("Cannot parse out map entry, key: {}", key),
                     }
                 })
             }
@@ -146,7 +146,7 @@ pub fn from_data_point(input: TokenStream) -> TokenStream {
                                 settings.#ident = v.clone();
                             }
                         },
-                        _ => panic!("Cannot parse out map entry, key: {}", key),
+                        _ => println!("Cannot parse out map entry, key: {}", key),
                     }
                 })
             }
@@ -162,7 +162,7 @@ pub fn from_data_point(input: TokenStream) -> TokenStream {
                                 settings.#ident = *v;
                             }
                         },
-                        _ => panic!("Cannot parse out map entry, key: {}", key),
+                        _ => println!("Cannot parse out map entry, key: {}", key),
                     }
                 })
             }
@@ -178,7 +178,7 @@ pub fn from_data_point(input: TokenStream) -> TokenStream {
                                 settings.#ident = *v;
                             }
                         },
-                        _ => panic!("Cannot parse out map entry, key: {}", key),
+                        _ => println!("Cannot parse out map entry, key: {}", key),
                     }
                 })
             }
@@ -194,7 +194,7 @@ pub fn from_data_point(input: TokenStream) -> TokenStream {
                                 settings.#ident = *v;
                             }
                         },
-                        _ => panic!("Cannot parse out map entry, key: {}", key),
+                        _ => println!("Cannot parse out map entry, key: {}", key),
                     }
                 })
             }
